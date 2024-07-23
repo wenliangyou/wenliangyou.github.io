@@ -84,6 +84,7 @@
         <h1>Buttons</h1>
         <button onclick="Telegram.WebApp.expand();">Expand Webview</button>
         <button onclick="toggleMainButton();">Toggle Main Button</button>
+        <button onclick="sendData();"></button>
     </main>
     <div id="viewport"></div>
     <div id="viewport-params-size"></div>
@@ -149,6 +150,12 @@
         Telegram.WebApp.onEvent('themeChanged', function() {
             document.body.setAttribute('style', '--bg-color:' + Telegram.WebApp.backgroundColor);
         });
+
+        function sendData() {
+            Telegram.WebApp.sendData({
+                'key': 'value'
+            })
+        }
 
     </script>
 
