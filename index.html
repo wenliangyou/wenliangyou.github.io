@@ -98,14 +98,28 @@
             >Open link inside Telegram webview</a
           >
         </li>
+        <li>
+          <a
+            href="javascript:Telegram.WebApp.openTelegramLink('https://ton.org/');"
+            >Open external link within Telegram（openTelegramLink）</a
+          >
+        </li>
+        <li>
+          <a
+            href="javascript:Telegram.WebApp.openLink('https://t.me/trendingapps');"
+            >Open tg link within Telegram （openLink）</a
+          >
+        </li>
       </ul>
 
       <h1>Buttons</h1>
-      <button onclick="Telegram.WebApp.expand();">Expand Webview</button>
-      <button onclick="toggleMainButton();">Toggle Main Button</button>
-      <button onclick="sendData();">Send Data</button>
-      <!-- 关闭按钮 -->
-      <button onclick="Telegram.WebApp.close();">Close</button>
+      <div class="buttons">
+        <button onclick="Telegram.WebApp.expand();">Expand Webview</button>
+        <button onclick="toggleMainButton();">Toggle Main Button</button>
+        <button onclick="sendData();">Send Data</button>
+        <!-- 关闭按钮 -->
+        <button onclick="Telegram.WebApp.close();">Close</button>
+      </div>
     </main>
     <div id="viewport"></div>
     <div id="viewport-params-size"></div>
@@ -184,7 +198,7 @@
       });
 
       function sendData() {
-        Telegram.WebApp.sendData('text');
+        Telegram.WebApp.sendData("text");
       }
     </script>
 
