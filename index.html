@@ -1,1 +1,532 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><link rel=icon href=/favicon.ico><title>Vue Admin Template</title><link href=/static/css/chunk-elementUI.ded27da0.css rel=stylesheet><link href=/static/css/chunk-libs.3dfb7769.css rel=stylesheet><link href=/static/css/app.41c99ed2.css rel=stylesheet></head><body><noscript><strong>We're sorry but Vue Admin Template doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/static/js/chunk-elementUI.d234ae2c.js></script><script src=/static/js/chunk-libs.715ae1c4.js></script><script>(function(e){function n(n){for(var r,c,a=n[0],d=n[1],f=n[2],i=0,h=[];i<a.length;i++)c=a[i],u[c]&&h.push(u[c][0]),u[c]=0;for(r in d)Object.prototype.hasOwnProperty.call(d,r)&&(e[r]=d[r]);l&&l(n);while(h.length)h.shift()();return o.push.apply(o,f||[]),t()}function t(){for(var e,n=0;n<o.length;n++){for(var t=o[n],r=!0,c=1;c<t.length;c++){var a=t[c];0!==u[a]&&(r=!1)}r&&(o.splice(n--,1),e=d(d.s=t[0]))}return e}var r={},c={runtime:0},u={runtime:0},o=[];function a(e){return d.p+"static/js/"+({}[e]||e)+"."+{"chunk-1e2e33ae":"0bec1ef3","chunk-2d0c8bf7":"6f815901","chunk-2d0cfaef":"5391b9d1","chunk-2d0d0f79":"bc82cfe7","chunk-2d0e4b0c":"34e05e0b","chunk-2d0e4e1f":"892d0799","chunk-2d0e944c":"6f3c6de5","chunk-2d2104c6":"89a88eba","chunk-2d226cab":"4298477e","chunk-2d229205":"251547ab","chunk-3da817e7":"35da4295","chunk-42d6817a":"f7f3595a","chunk-4de1c2b6":"3deb959c","chunk-bc696014":"2fc4e4db"}[e]+".js"}function d(n){if(r[n])return r[n].exports;var t=r[n]={i:n,l:!1,exports:{}};return e[n].call(t.exports,t,t.exports,d),t.l=!0,t.exports}d.e=function(e){var n=[],t={"chunk-1e2e33ae":1,"chunk-3da817e7":1,"chunk-42d6817a":1,"chunk-4de1c2b6":1,"chunk-bc696014":1};c[e]?n.push(c[e]):0!==c[e]&&t[e]&&n.push(c[e]=new Promise((function(n,t){for(var r="static/css/"+({}[e]||e)+"."+{"chunk-1e2e33ae":"44fbff0d","chunk-2d0c8bf7":"31d6cfe0","chunk-2d0cfaef":"31d6cfe0","chunk-2d0d0f79":"31d6cfe0","chunk-2d0e4b0c":"31d6cfe0","chunk-2d0e4e1f":"31d6cfe0","chunk-2d0e944c":"31d6cfe0","chunk-2d2104c6":"31d6cfe0","chunk-2d226cab":"31d6cfe0","chunk-2d229205":"31d6cfe0","chunk-3da817e7":"18b7c6df","chunk-42d6817a":"1f0a69cb","chunk-4de1c2b6":"a37cd815","chunk-bc696014":"eb1a2eef"}[e]+".css",u=d.p+r,o=document.getElementsByTagName("link"),a=0;a<o.length;a++){var f=o[a],i=f.getAttribute("data-href")||f.getAttribute("href");if("stylesheet"===f.rel&&(i===r||i===u))return n()}var h=document.getElementsByTagName("style");for(a=0;a<h.length;a++){f=h[a],i=f.getAttribute("data-href");if(i===r||i===u)return n()}var l=document.createElement("link");l.rel="stylesheet",l.type="text/css",l.onload=n,l.onerror=function(n){var r=n&&n.target&&n.target.src||u,o=new Error("Loading CSS chunk "+e+" failed.\n("+r+")");o.code="CSS_CHUNK_LOAD_FAILED",o.request=r,delete c[e],l.parentNode.removeChild(l),t(o)},l.href=u;var s=document.getElementsByTagName("head")[0];s.appendChild(l)})).then((function(){c[e]=0})));var r=u[e];if(0!==r)if(r)n.push(r[2]);else{var o=new Promise((function(n,t){r=u[e]=[n,t]}));n.push(r[2]=o);var f,i=document.createElement("script");i.charset="utf-8",i.timeout=120,d.nc&&i.setAttribute("nonce",d.nc),i.src=a(e),f=function(n){i.onerror=i.onload=null,clearTimeout(h);var t=u[e];if(0!==t){if(t){var r=n&&("load"===n.type?"missing":n.type),c=n&&n.target&&n.target.src,o=new Error("Loading chunk "+e+" failed.\n("+r+": "+c+")");o.type=r,o.request=c,t[1](o)}u[e]=void 0}};var h=setTimeout((function(){f({type:"timeout",target:i})}),12e4);i.onerror=i.onload=f,document.head.appendChild(i)}return Promise.all(n)},d.m=e,d.c=r,d.d=function(e,n,t){d.o(e,n)||Object.defineProperty(e,n,{enumerable:!0,get:t})},d.r=function(e){"undefined"!==typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},d.t=function(e,n){if(1&n&&(e=d(e)),8&n)return e;if(4&n&&"object"===typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(d.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&n&&"string"!=typeof e)for(var r in e)d.d(t,r,function(n){return e[n]}.bind(null,r));return t},d.n=function(e){var n=e&&e.__esModule?function(){return e["default"]}:function(){return e};return d.d(n,"a",n),n},d.o=function(e,n){return Object.prototype.hasOwnProperty.call(e,n)},d.p="/",d.oe=function(e){throw console.error(e),e};var f=window["webpackJsonp"]=window["webpackJsonp"]||[],i=f.push.bind(f);f.push=n,f=f.slice();for(var h=0;h<f.length;h++)n(f[h]);var l=i;t()})([]);</script><script src=/static/js/app.cfa74f12.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EWQ49N44GM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-EWQ49N44GM");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Roulette - What Should I Eat Today?</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 500px;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 20px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+        text-align: center;
+        padding: 40px 30px;
+        position: relative;
+      }
+
+      h1 {
+        color: #e74c3c;
+        font-size: 2.8rem;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .subtitle {
+        color: #7f8c8d;
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+        font-weight: 500;
+      }
+
+      .result-container {
+        min-height: 280px;
+        height: auto;
+        overflow: hidden;
+        background: #f8f9fa;
+        border-radius: 15px;
+        padding: 30px;
+        margin: 30px 0;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+        position: relative;
+        overflow: hidden;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .result-container:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background: linear-gradient(
+          to right,
+          #e74c3c,
+          #e67e22,
+          #f1c40f,
+          #2ecc71,
+          #3498db,
+          #9b59b6
+        );
+      }
+
+      #food-result {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #2c3e50;
+        min-height: 85px;
+        line-height: 1.2;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: all 0.4s;
+        box-sizing: border-box;
+      }
+
+      #food-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 20px auto;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border: 5px solid white;
+        display: none;
+      }
+
+      .select-btn {
+        background: linear-gradient(to right, #e74c3c, #e67e22);
+        color: white;
+        border: none;
+        padding: 18px 45px;
+        font-size: 1.3rem;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: 0 7px 15px rgba(231, 76, 60, 0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        margin: 30px auto;
+        font-weight: 600;
+      }
+
+      .select-btn:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(231, 76, 60, 0.5);
+      }
+
+      .select-btn:active {
+        transform: translateY(0);
+      }
+
+      .select-btn i {
+        font-size: 1.5rem;
+        animation: pulse 1.5s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .cuisine-controls {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin: 20px 0 30px;
+      }
+
+      .cuisine-btn {
+        background: white;
+        border: 2px solid #3498db;
+        color: #3498db;
+        padding: 10px 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-weight: 600;
+      }
+
+      .cuisine-btn.active,
+      .cuisine-btn:hover {
+        background: #3498db;
+        color: white;
+      }
+
+      .instructions {
+        background: #eafaf1;
+        border-radius: 15px;
+        padding: 20px;
+        margin-top: 30px;
+        text-align: left;
+      }
+
+      .instructions h3 {
+        color: #27ae60;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .instructions p {
+        color: #7f8c8d;
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+
+      .instructions ul {
+        padding-left: 20px;
+        margin: 15px 0;
+      }
+
+      .instructions li {
+        margin-bottom: 8px;
+        color: #34495e;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        color: #7f8c8d;
+        font-size: 0.9rem;
+      }
+
+      /* Animation Classes */
+      .spin {
+        animation: spin 0.8s ease-out;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: scale(0.8);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      .pulse-text {
+        animation: pulseText 1s infinite;
+      }
+
+      @keyframes pulseText {
+        0% {
+          transform: scale(1);
+          text-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+        }
+        50% {
+          transform: scale(1.05);
+          text-shadow: 0 0 15px rgba(231, 76, 60, 0.8);
+        }
+        100% {
+          transform: scale(1);
+          text-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+        }
+      }
+
+      .food-icon {
+        font-size: 3rem;
+        margin: 15px 0;
+        color: #e74c3c;
+        display: block;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2.3rem;
+        }
+        .container {
+          padding: 30px 20px;
+        }
+        .select-btn {
+          width: 100%;
+          padding: 16px;
+        }
+        #food-result {
+          font-size: 2rem;
+          min-height: 70px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Food Roulette</h1>
+      <div class="subtitle">Let fate decide your next meal</div>
+
+      <div class="result-container">
+        <i class="fas fa-utensils food-icon"></i>
+        <div id="food-result">Press the button below!</div>
+        <img id="food-image" src="" alt="Food Image" />
+      </div>
+
+      <button class="select-btn" id="spin-btn">
+        <i class="fas fa-random"></i> What Should I Eat?
+      </button>
+
+      <div class="cuisine-controls">
+        <button class="cuisine-btn active" data-cuisine="all">
+          All Cuisines
+        </button>
+        <button class="cuisine-btn" data-cuisine="western">Western</button>
+        <button class="cuisine-btn" data-cuisine="asian">Asian</button>
+        <button class="cuisine-btn" data-cuisine="italian">Italian</button>
+        <button class="cuisine-btn" data-cuisine="mexican">Mexican</button>
+      </div>
+
+      <div class="instructions">
+        <h3><i class="fas fa-info-circle"></i> How It Works</h3>
+        <p>
+          Struggling to decide what to eat? Food Roulette takes the stress out
+          of meal decisions:
+        </p>
+        <ul>
+          <li>
+            Click the "What Should I Eat?" button to randomly select a meal
+          </li>
+          <li>Filter by cuisine type using the buttons above</li>
+          <li>Try again if you're not satisfied with the result</li>
+          <li>Discover new foods and restaurants in your area</li>
+        </ul>
+        <p>
+          Our database includes over 150 popular dishes from around the world!
+        </p>
+      </div>
+
+      <div class="footer">
+        <div><i class="far fa-copyright"></i> 2023 Food Roulette</div>
+        <div>
+          Made with <i class="fas fa-heart" style="color: #e74c3c"></i> for food
+          lovers
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Food database with cuisine categories
+      const allFoods = {
+        all: [
+          "Pizza",
+          "Sushi",
+          "Burger",
+          "Tacos",
+          "Pasta",
+          "Salad",
+          "Steak",
+          "Sushi",
+          "Ramen",
+          "Sandwich",
+          "Burrito",
+          "Fried Chicken",
+          "Curry",
+          "Pho",
+          "Hot Dog",
+          "Dumplings",
+          "Sushi",
+          "Ramen",
+          "Pizza",
+          "Tacos"
+        ],
+        western: [
+          "Steak",
+          "Burgers",
+          "Grilled Salmon",
+          "Caesar Salad",
+          "BBQ Ribs",
+          "Fish and Chips",
+          "Roast Chicken",
+          "Mac and Cheese",
+          "Buffalo Wings",
+          "Club Sandwich",
+          "Beef Wellington",
+          "Shepherd's Pie"
+        ],
+        asian: [
+          "Sushi",
+          "Ramen",
+          "Pad Thai",
+          "Bibimbap",
+          "Dim Sum",
+          "Pho",
+          "Curry",
+          "Dumplings",
+          "Spring Rolls",
+          "Teriyaki Chicken",
+          "Sashimi",
+          "Bao Buns",
+          "Kimchi",
+          "Bubble Tea"
+        ],
+        italian: [
+          "Pizza Margherita",
+          "Spaghetti Carbonara",
+          "Lasagna",
+          "Risotto",
+          "Fettuccine Alfredo",
+          "Chicken Parmesan",
+          "Tiramisu",
+          "Bruschetta",
+          "Ravioli",
+          "Minestrone",
+          "Caprese Salad",
+          "Gelato"
+        ],
+        mexican: [
+          "Tacos al Pastor",
+          "Burritos",
+          "Quesadillas",
+          "Enchiladas",
+          "Guacamole & Chips",
+          "Chiles Rellenos",
+          "Tamales",
+          "Carnitas",
+          "Nachos",
+          "Churros",
+          "Horchata",
+          "Mexican Street Corn"
+        ]
+      };
+
+      // Food images (using emojis as placeholders)
+      const foodImages = {
+        Pizza: "🍕",
+        Sushi: "🍣",
+        Burger: "🍔",
+        Tacos: "🌮",
+        Pasta: "🍝",
+        Salad: "🥗",
+        Steak: "🥩",
+        Ramen: "🍜",
+        Sandwich: "🥪",
+        Burrito: "🌯",
+        "Fried Chicken": "🍗",
+        Curry: "🍛",
+        Pho: "🍲",
+        "Hot Dog": "🌭",
+        Dumplings: "🥟"
+      };
+
+      // Get DOM elements
+      const spinBtn = document.getElementById("spin-btn");
+      const foodResult = document.getElementById("food-result");
+      const foodImage = document.getElementById("food-image");
+      const cuisineBtns = document.querySelectorAll(".cuisine-btn");
+
+      let currentCuisine = "all";
+
+      // Add event listeners
+      spinBtn.addEventListener("click", selectRandomFood);
+
+      cuisineBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          cuisineBtns.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          currentCuisine = btn.dataset.cuisine;
+        });
+      });
+
+      // Main function to select random food
+      function selectRandomFood() {
+        // Get the current food list
+        const foodList = allFoods[currentCuisine];
+
+        // Add spinning effect
+        foodResult.classList.remove("spin");
+        foodResult.classList.remove("pulse-text");
+        foodResult.textContent = "Spinning...";
+        spinBtn.disabled = true;
+
+        // Add temporary spinning animation
+        let counter = 0;
+        const spinInterval = setInterval(() => {
+          counter++;
+          const randomIndex = Math.floor(Math.random() * foodList.length);
+          foodResult.textContent = foodList[randomIndex];
+
+          if (counter > 10) {
+            clearInterval(spinInterval);
+
+            // Get final random food
+            const randomIndex = Math.floor(Math.random() * foodList.length);
+            const selectedFood = foodList[randomIndex];
+
+            // Display result with animation
+            foodResult.textContent = selectedFood;
+            foodResult.classList.add("spin");
+            foodResult.classList.add("pulse-text");
+
+            // Show food icon if available
+            if (foodImages[selectedFood]) {
+              foodResult.innerHTML = `${selectedFood} ${foodImages[selectedFood]}`;
+            }
+
+            spinBtn.disabled = false;
+
+            // Scroll to result
+            foodResult.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 150);
+      }
+
+      // Initialize the page
+      document.addEventListener("DOMContentLoaded", () => {
+        // Add a subtle animation to the button
+        setTimeout(() => {
+          spinBtn.style.transform = "scale(1.05)";
+          spinBtn.style.boxShadow = "0 10px 20px rgba(231, 76, 60, 0.6)";
+          setTimeout(() => {
+            spinBtn.style.transform = "scale(1)";
+            spinBtn.style.boxShadow = "0 7px 15px rgba(231, 76, 60, 0.4)";
+          }, 300);
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>
